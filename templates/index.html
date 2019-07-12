@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GiftuBuddy</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css')}}">
+<link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+<link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='css/owl.theme.css')}}">
+<link rel="stylesheet"  type ="text/css" href="{{ url_for('static', filename='css/owl.carousel.css')}}">
+<!--<link rel="stylesheet" href="css/bootstrap.min.css" type = "text/css">
+<link rel="stylesheet" href="css/animate.css" type = "text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css" type = "text/css">
+<link rel="stylesheet" href="css/owl.theme.css" type = "text/css">
+<link rel="stylesheet" href="css/owl.carousel.css" type = "text/css">  -->
+
+<!-- Main css -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type = "text/css">
+
+<!-- Google Font -->
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<!-- =========================
+     PRE LOADER
+============================== -->
+<div class="preloader">
+
+	<div class="sk-rotating-plane"></div>
+
+</div>
+
+
+<!-- =========================
+     NAVIGATION LINKS
+============================== -->
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+	<div class="container">
+
+		<!-- navbar header -->
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse">
+
+			<ul class="nav navbar-nav navbar-right">
+				<a href="{{ url_for('oauth_authorize', provider='facebook') }}">
+				<button class="loginBtn loginBtn--facebook">
+  					Login
+				</button></a>
+
+
+			</ul>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- =========================
+    INTRO SECTION
+============================== -->
+<section id="intro" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<h1 class="wow bounceIn" data-wow-delay="0.9s">GiftuBuddy</h1>
+			<h3 class="wow fadeInUp" data-wow-delay="1.6s">Gift your dear one's</h3>
+			</div>
+		</div>
+	</div>
+</section>http://www.templatemo.com/tm-486-new-event
+
+
+<!-- =========================
+     SCRIPTS
+============================== -->
+<!--<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+-->
+<script src="{{ url_for('static', filename ='js/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/jquery.parallax.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename ='js/smoothscroll.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/wow.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/custom.js') }}"></script>
+
+</body>
+</html>
